@@ -1,5 +1,5 @@
 
-" $B%?%V$rM-8z$K$9$k(B
+" タブを有効にする
 let g:ariline#extensions#tabline#enabled = 1
 
 nmap <C-p> <Plug>AirlineSelectPrevTab
