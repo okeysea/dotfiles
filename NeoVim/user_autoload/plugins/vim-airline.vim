@@ -1,5 +1,4 @@
-
-" タブを有効にする
+" airline buffer tab
 let g:ariline#extensions#tabline#enabled = 1
 
 nmap <C-p> <Plug>AirlineSelectPrevTab
