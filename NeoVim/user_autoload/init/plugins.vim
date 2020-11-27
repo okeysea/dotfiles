@@ -13,8 +13,8 @@ Plug 'vim-airline/vim-airline-themes'
 " -----------------------------
 
 " vim-lsp, vim-lsp-settings ---
-Plug 'prabirshrestha/vim-lsp'
-Plug 'mattn/vim-lsp-settings'
+" Plug 'prabirshrestha/vim-lsp'
+" Plug 'mattn/vim-lsp-settings'
 " -----------------------------
 
 " Color schemes ---------------
@@ -36,5 +36,8 @@ Plug 'peitalin/vim-jsx-typescript'
 
 " -----------------------------
 
+" Language Server -------------
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" -----------------------------
 
 call plug#end()
