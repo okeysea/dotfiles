@@ -40,4 +40,11 @@ Plug 'peitalin/vim-jsx-typescript'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " -----------------------------
 
+" vim-iced---------------------
+Plug 'ctrlpvim/ctrlp.vim'
+" requires
+Plug 'guns/vim-sexp',     {'for': 'clojure'}
+Plug 'liquidz/vim-iced',  {'for': 'clojure'}
+" -----------------------------
+
 call plug#end()
