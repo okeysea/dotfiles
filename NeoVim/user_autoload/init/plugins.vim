@@ -61,10 +61,14 @@ Plug 'guns/vim-sexp',     {'for': 'clojure'}
 Plug 'liquidz/vim-iced',  {'for': 'clojure'}
 " -----------------------------
 
+" vim-which-key----------------
+Plug 'liuchengxu/vim-which-key'
+" -----------------------------
+
 call plug#end()
 
 " Automatically install/clean missing plugins on startup
-function vimenter_auto_install_clean()
+function s:vimenter_auto_install_clean()
   let plugin_dirs = split(glob(g:plug_home . "/*/"), "\n")
   let plug_defs = []
   for v in values( g:plugs )
@@ -79,4 +83,4 @@ function vimenter_auto_install_clean()
     PlugInstall --sync | q
   endif
 endfunction
-autocmd VimEnter * vimenter_auto_install_clean()
+autocmd VimEnter * call s:vimenter_auto_install_clean()
