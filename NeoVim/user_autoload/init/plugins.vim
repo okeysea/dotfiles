@@ -72,6 +72,17 @@ Plug 'liquidz/vim-iced',  {'for': 'clojure'}
 Plug 'liuchengxu/vim-which-key'
 " -----------------------------
 
+" fzf--------------------------
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+" -----------------------------
+
+" Git関係 ---------------------
+Plug 'airblade/vim-gitgutter'
+
+Plug 'tpope/vim-fugitive'
+" -----------------------------
+
 call plug#end()
 
 " Automatically install/clean missing plugins on startup
@@ -82,6 +93,9 @@ function s:vimenter_auto_install_clean()
     call add( plug_defs, v.dir )
   endfor
 
+  " plugin フォルダ中のフォルダ名を取得して、
+  " Plugによって定義されているものを除外し、のこってれば
+  " クリーンする
   if len(filter(plugin_dirs, 'match(plug_defs, v:val) == -1'))
     PlugClean | q
   endif
