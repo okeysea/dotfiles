@@ -83,6 +83,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 " -----------------------------
 
+" Ruby on Rails ---------------
+Plug 'tpope/vim-rails'
+" -----------------------------
+
 call plug#end()
 
 " Automatically install/clean missing plugins on startup
