@@ -79,8 +79,10 @@ Plug 'junegunn/fzf.vim'
 
 " Git関係 ---------------------
 Plug 'airblade/vim-gitgutter'
-
 Plug 'tpope/vim-fugitive'
+Plug 'cohama/agit.vim'       " :Agit commit tree
+Plug 'thysd/committia.vim'   " Manage commit message
+Plug 'idanarye/vim-merginal' " Manage branch
 " -----------------------------
 
 " Ruby on Rails ---------------
