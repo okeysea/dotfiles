@@ -81,7 +81,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'cohama/agit.vim'       " :Agit commit tree
-Plug 'thysd/committia.vim'   " Manage commit message
+Plug 'rhysd/committia.vim'   " Manage commit message
 Plug 'idanarye/vim-merginal' " Manage branch
 " -----------------------------
 
