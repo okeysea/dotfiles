@@ -11,6 +11,7 @@
   - nodejs (coc.nvim)
     - yarn 
   - ripgrep
+  - python3 (defx: いれたけどつかってないので消す？)
 
 ## Bash
 
