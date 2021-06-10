@@ -17,7 +17,8 @@ call plug#begin(s:plugin_path)
 Plug 'junegunn/vim-easy-align'
 
 " filer -----------------------
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree' |
+      \ Plug 'Xuyuanp/nerdtree-git-plugin' " Git の表示してくれるやつ
 
 if has('nvim')
   Plug 'Shougo/defx.nvim', {'do': ':UpdateRemotePlugins'}

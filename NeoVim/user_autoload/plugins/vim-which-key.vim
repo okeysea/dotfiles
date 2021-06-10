@@ -47,6 +47,7 @@ let g:which_key_map['g'] = {
                   \ 'w'   : [':Gwrite'     , 'git-write'            ],
                   \ 'c'   : [':Gcommit'    , 'git-commit'           ],
                   \ 'C'   : [':Gcommit -v' , 'git-commit-with-diff' ],
+                  \ 'b'   : [':Gblame'     , 'git-blame'            ],
                   \ 'P'   : [':Gpush'      , 'git-push'             ],
                   \}
 
