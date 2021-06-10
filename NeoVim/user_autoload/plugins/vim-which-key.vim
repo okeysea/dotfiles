@@ -41,4 +41,13 @@ let g:which_key_map['l'] = {
                   \ 'p'   : [':CocListResume',       'coclist-resume'      ],
                   \}
 
+let g:which_key_map['g'] = {
+                  \ 'name': '+git'         ,
+                  \ 's'   : [':Gstatus'    , 'git-status'           ],
+                  \ 'w'   : [':Gwrite'     , 'git-write'            ],
+                  \ 'c'   : [':Gcommit'    , 'git-commit'           ],
+                  \ 'C'   : [':Gcommit -v' , 'git-commit-with-diff' ],
+                  \ 'P'   : [':Gpush'      , 'git-push'             ],
+                  \}
+
 call which_key#register('<Space>', "g:which_key_map")
