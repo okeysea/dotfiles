@@ -90,6 +90,10 @@ Plug 'idanarye/vim-merginal' " Manage branch
 Plug 'tpope/vim-rails'
 " -----------------------------
 
+" EasyMotion ------------------
+Plug 'easymotion/vim-easymotion'
+" -----------------------------
+
 call plug#end()
 
 " Automatically install/clean missing plugins on startup
