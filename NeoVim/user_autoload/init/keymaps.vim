@@ -17,3 +17,5 @@ tnoremap <A-h> <C-\><C-n><C-w>h
 noremap  <A-l> <C-w>l
 inoremap <A-l> <Esc><C-w>l
 tnoremap <A-l> <C-\><C-n><C-w>l
+
+let mapleader = "\<space>"
