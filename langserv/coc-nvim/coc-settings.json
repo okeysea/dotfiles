@@ -1,0 +1,44 @@
+{
+  "diagnostic-languageserver.filetypes": {
+    "vim": "vint",
+    "email": "languagetool",
+    "markdown": [ "write-good", "markdownlint" ],
+    "sh": "shellcheck",
+    "elixir": ["mix_credo", "mix_credo_compile"],
+    "eelixir": ["mix_credo", "mix_credo_compile"],
+    "php": ["phpstan", "psalm"]
+  },
+  "diagnostic-languageserver.formatFiletypes": {
+    "dart": "dartfmt",
+    "elixir": "mix_format",
+    "eelixir": "mix_format",
+    "lua": "lua-format",
+    "sh": "shfmt"
+  },
+  "languageserver": {
+      "terraform": {
+        "command": "terraform-ls",
+        "args": ["serve"],
+        "filetypes": [
+          "terraform",
+          "tf"
+        ],
+        "initializationOptions": {},
+        "settings": {}
+      },
+      "dockerfile": {
+        "command": "~/dotfiles/langserv/bin/docked-docker-langserver",
+        "args": ["$(pwd)", "--stdio"],
+        "filetypes": [
+          "dockerfile"
+        ],
+      },
+      "text":{
+        "command": "node",
+        "args": ["/home/user/dotfiles/langserv/langserv-proxy/main.js"],
+        "filetypes": [
+          "txt", "text"
+        ],
+      }
+  }
+}
