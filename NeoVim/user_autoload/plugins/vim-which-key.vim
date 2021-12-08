@@ -49,6 +49,13 @@ let g:which_key_map['g'] = {
                   \ 'C'   : [':Gcommit -v' , 'git-commit-with-diff' ],
                   \ 'b'   : [':Gblame'     , 'git-blame'            ],
                   \ 'P'   : [':Gpush'      , 'git-push'             ],
+                  \
+                  \ 'T'   : [':TigOpenCurrentFile'      , 'open-tig-with-current-file'     ],
+                  \ 't'   : [':TigOpenProjectRootDir'   , 'open-tig-with-Project-root-path'],
+                  \ 'g'   : [':TigGrep'                 , 'open-tig-grep'                  ],
+                  \ 'r'   : [':TigGrepResume'           , 'resume-from-last-grep'          ],
+                  \ 'G'   : [':<C-u>TigGrep<Space><C-R><c-W><CR>', 'open-tig-grep-with-the-word-under-the-cursor'],
+                  \ 'B'   : [':TigBlame'                , 'open-tig-blame-with-current-file'],
                   \}
 
 call which_key#register('<Space>', "g:which_key_map")

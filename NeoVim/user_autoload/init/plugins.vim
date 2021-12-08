@@ -81,9 +81,11 @@ Plug 'junegunn/fzf.vim'
 " Git関係 ---------------------
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
-Plug 'cohama/agit.vim'       " :Agit commit tree
-Plug 'rhysd/committia.vim'   " Manage commit message
-Plug 'idanarye/vim-merginal' " Manage branch
+Plug 'cohama/agit.vim'              " :Agit commit tree
+Plug 'rhysd/committia.vim'          " Manage commit message
+Plug 'idanarye/vim-merginal'        " Manage branch
+Plug 'rhysd/conflict-marker.vim'    " コンフリクトナビゲーション
+Plug 'iberianpig/tig-explorer.vim'  " Vim から Tig を使うプラグイン
 " -----------------------------
 
 " Ruby on Rails ---------------
@@ -94,6 +96,13 @@ Plug 'tpope/vim-rails'
 Plug 'easymotion/vim-easymotion'
 " -----------------------------
 
+" WinResizer ------------------
+Plug 'simeji/winresizer'
+" -----------------------------
+
+" linter-----------------------
+Plug 'w0rp/ale'
+" -----------------------------
 call plug#end()
 
 " Automatically install/clean missing plugins on startup
