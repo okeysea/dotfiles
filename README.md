@@ -12,6 +12,7 @@
     - yarn 
   - ripgrep
   - python3 (defx: いれたけどつかってないので消す？)
+  - tig
 
 ## Bash
 
