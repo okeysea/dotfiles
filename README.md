@@ -16,7 +16,22 @@
 
 ## Bash
 
-以下のものを~/.bashrcなどでsourceで読みこむ。
+以下のものを~/.bashrcなどでsourceで読みこむ。(macはzshrc)
 
 - bash/show_git_branch.sh
   - git branchから現在のブランチを表示する。
+
+## tmux
+
+`~/.tmux.conf` に `tmux/.tmux.conf` のシンボルリンクを張る
+
+### ロギング
+
+bash/tmux_autologging_ssh.sh を ~/.bashrcなどでsourceで読み込む。(macはzshrc)
+
+
+## aquaskk x iterm2
+
+karabinar-keyelementsで対策必要あり
+
+
