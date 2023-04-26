@@ -25,6 +25,11 @@
 
 `~/.tmux.conf` に `tmux/.tmux.conf` のシンボルリンクを張る
 
+### tmux plugins
+
+- reattach-to-user-namespace
+- tpm
+
 ### ロギング
 
 bash/tmux_autologging_ssh.sh を ~/.bashrcなどでsourceで読み込む。(macはzshrc)
