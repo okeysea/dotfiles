@@ -1,0 +1,13 @@
+[core]
+	editor = nvim -c \"set fenc=utf-8\"
+[diff]
+  tool = nvimdiff
+[difftool "nvimdiff"]
+  cmd = "nvim -R -d -c \"wincmd l\" -d \"$LOCAL\" \"$REMOTE\""
+[merge]
+	tool = nvim
+[mergetool "nvim"]
+	# cmd = nvim -d -c '2wincmd w | diffthis | 3wincmd w | diffthis | 4wincmd w | diffthis | 1wincmd w | wincmd J' -O $MERGED $LOCAL $BASE $REMOTE
+	cmd = "nvim -d -c \"4wincmd w | wincmd J\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"  \"$MERGED\""
+[alias]
+	openpr = "!f() { hub browse -- `git log --merges --oneline --reverse --ancestry-path $1...main | grep 'Merge pull request #' | head -n 1 | cut -f5 -d' ' | sed -e 's%#%pull/%'`; }; f"
