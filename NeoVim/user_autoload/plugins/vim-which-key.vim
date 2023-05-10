@@ -42,13 +42,14 @@ let g:which_key_map['l'] = {
                   \}
 
 let g:which_key_map['g'] = {
-                  \ 'name': '+git'         ,
-                  \ 's'   : [':Gstatus'    , 'git-status'           ],
-                  \ 'w'   : [':Gwrite'     , 'git-write'            ],
-                  \ 'c'   : [':Gcommit'    , 'git-commit'           ],
-                  \ 'C'   : [':Gcommit -v' , 'git-commit-with-diff' ],
-                  \ 'b'   : [':Gblame'     , 'git-blame'            ],
-                  \ 'P'   : [':Gpush'      , 'git-push'             ],
+                  \ 'name': '+git',
+                  \ 's'   : [':Gstatus',            'git-status'           ],
+                  \ 'w'   : [':Gwrite',             'git-write'            ],
+                  \ 'c'   : [':Gcommit',            'git-commit'           ],
+                  \ 'C'   : [':Gcommit -v',         'git-commit-with-diff' ],
+                  \ 'b'   : [':Gblame',             'git-blame'            ],
+                  \ 'P'   : [':Gpush',              'git-push'             ],
+                  \ 'l'   : [':ToggleFloatLazyGit', 'lazygit'             ],
                   \
                   \ 'T'   : [':TigOpenCurrentFile'      , 'open-tig-with-current-file'     ],
                   \ 't'   : [':TigOpenProjectRootDir'   , 'open-tig-with-Project-root-path'],

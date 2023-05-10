@@ -103,6 +103,11 @@ Plug 'simeji/winresizer'
 " linter-----------------------
 Plug 'w0rp/ale'
 " -----------------------------
+
+" persist and toggle multiple terminals during an editing session
+Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
+" -----------------------------
+
 call plug#end()
 
 " Automatically install/clean missing plugins on startup
