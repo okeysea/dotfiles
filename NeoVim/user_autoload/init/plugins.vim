@@ -101,7 +101,7 @@ Plug 'simeji/winresizer'
 " -----------------------------
 
 " linter-----------------------
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 " -----------------------------
 
 " persist and toggle multiple terminals during an editing session
