@@ -11,3 +11,6 @@
 	cmd = "nvim -d -c \"4wincmd w | wincmd J\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"  \"$MERGED\""
 [alias]
 	openpr = "!f() { hub browse -- `git log --merges --oneline --reverse --ancestry-path $1...main | grep 'Merge pull request #' | head -n 1 | cut -f5 -d' ' | sed -e 's%#%pull/%'`; }; f"
+[user]
+	name = okeysea
+	email = 67820904+okeysea@users.noreply.github.com
