@@ -39,4 +39,6 @@ bash/tmux_autologging_ssh.sh を ~/.bashrcなどでsourceで読み込む。(mac�
 
 karabinar-keyelementsで対策必要あり
 
+## lazygit
 
+For mac: ln -s ${PWD}/lazygit/config.yml ~/Library/Application Support/lazygit/config.yml
