@@ -43,7 +43,7 @@ let g:which_key_map['l'] = {
 
 let g:which_key_map['g'] = {
                   \ 'name': '+git',
-                  \ 's'   : [':Gstatus',            'git-status'           ],
+                  \ 's'   : [':Git status',            'git-status'           ],
                   \ 'w'   : [':Gwrite',             'git-write'            ],
                   \ 'c'   : [':Gcommit',            'git-commit'           ],
                   \ 'C'   : [':Gcommit -v',         'git-commit-with-diff' ],
@@ -57,6 +57,19 @@ let g:which_key_map['g'] = {
                   \ 'r'   : [':TigGrepResume'           , 'resume-from-last-grep'          ],
                   \ 'G'   : [':<C-u>TigGrep<Space><C-R><c-W><CR>', 'open-tig-grep-with-the-word-under-the-cursor'],
                   \ 'B'   : [':TigBlame'                , 'open-tig-blame-with-current-file'],
+                  \}
+
+let g:which_key_map['c'] = {
+                  \ 'name': '+Copilot',
+                  \ 'c'   : {
+                        \ 'name': '+Copilot Chat',
+                        \ 'q'   : [':CopilotChatBuffer',   'copilot-chat-quick'],
+                        \ 'n'   : [':CopilotChat',         'copilot-chat-normal'],
+                        \},
+                  \ 'a'   : {
+                        \ 'name': '+Avante',
+                        \ 'a'   : [':OkeyseaAvanteAsk',    'avante-ask'],
+                        \},
                   \}
 
 call which_key#register('<Space>', "g:which_key_map")

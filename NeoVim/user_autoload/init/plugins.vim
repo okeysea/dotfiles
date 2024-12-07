@@ -108,6 +108,35 @@ Plug 'dense-analysis/ale'
 Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 " -----------------------------
 
+" Copilot ---------------------
+Plug 'github/copilot.vim'
+" -----------------------------
+
+" Copilot Chat ----------------
+Plug 'zbirenbaum/copilot.lua'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'CopilotC-Nvim/CopilotChat.nvim', { 'branch': 'canary' }
+" -----------------------------
+
+" Mob programming -------------
+Plug 'jbyuki/instant.nvim'
+" -----------------------------
+
+" AI completion ----------------
+" Deps
+Plug 'stevearc/dressing.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'MunifTanjim/nui.nvim'
+
+" Optional deps
+Plug 'nvim-tree/nvim-web-devicons' "or Plug 'echasnovski/mini.icons'
+Plug 'HakonHarnes/img-clip.nvim'
+Plug 'zbirenbaum/copilot.lua'
+
+" Yay, pass source=true if you want to build from source
+Plug 'yetone/avante.nvim', { 'branch': 'main', 'do': 'make' }
+" -----------------------------
+
 call plug#end()
 
 " Automatically install/clean missing plugins on startup
