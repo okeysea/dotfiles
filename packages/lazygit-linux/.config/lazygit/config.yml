@@ -1,0 +1,14 @@
+customCommands:
+  - key: "c"
+    context: "files"
+    command: "bash -c 'message=\"{{.Form.Message}}\";commit_message=\"$message\"; git commit -m \"$commit_message\"'"
+    description: '変更をコミット [customCmd]'
+    prompts:
+      - type: "input"
+        title: "Enter the Message"
+        key: "Message"
+        initialValue: "[refs: {{ .SelectedLocalBranch.Name }}] "
+      - type: "confirm"
+        title: "Commit"
+        body: "Commit with the message '{{.Form.Message}}'. Is this okay?"
+    loadingText: "Commiting..."
